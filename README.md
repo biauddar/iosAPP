@@ -8,5 +8,6 @@ _制作スケジュールリンク_
 ## 設計資料
 _設計資料リンク_
 
+![avatar](/user/stuent/desktop/1.png)
 
 
