@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InfoViewController" customModule="Drag" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mwf-PF-Mox">
+                    <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6j-fv-dEW">
+                    <rect key="frame" x="58" y="37" width="552" height="208"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="208" id="ggK-Lv-cfO"/>
+                        <constraint firstAttribute="width" constant="552" id="wvT-TI-R8H"/>
+                    </constraints>
+                    <string key="text">ゲームのルール：
+
+       二番目のスライダをドラックして一番目のスライダの位置（パーセント）に近づいてください，近けなれば近いほどスコアが高くなる。
+
+
+
+</string>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6T-EP-lOL">
+                    <rect key="frame" x="318" y="302" width="30" height="30"/>
+                    <state key="normal" title="戻る">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onBack:" destination="-1" eventType="touchUpInside" id="rTA-jk-NZG"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="m6T-EP-lOL" secondAttribute="centerX" id="4Qd-FK-ctU"/>
+                <constraint firstAttribute="centerY" secondItem="m6T-EP-lOL" secondAttribute="centerY" constant="-130" id="Pfe-2t-zwx"/>
+                <constraint firstAttribute="centerX" secondItem="H6j-fv-dEW" secondAttribute="centerX" id="QLo-jg-ypT"/>
+                <constraint firstAttribute="centerY" secondItem="H6j-fv-dEW" secondAttribute="centerY" id="qrX-y4-MqQ"/>
+            </constraints>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="137.5" y="153.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Background.png" width="480" height="320"/>
+    </resources>
+</document>
